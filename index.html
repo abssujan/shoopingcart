@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+        <style>
+         *{
+            font-family: 'Roboto', sans-serif;
+         }
+        </style>
+        
+    </head>
+    <body class="bg-gray-100">
+        <header class="w-9/12 mx-auto mt-10">
+            <h1 class="text-center text-4xl text-blue-400 font-semibold">My Shopping cart</h1>
+        </header>
+        <main>
+            <section class=" shadow-2xl w-9/12 xl:w-7/12 mx-auto mt-10 bg-gray-400 rounded-lg p-20">
+                <!-- phone -->
+                <div class="bg-white rounded-lg p-5  px-10 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class=" w-20 h-20 object-cover" src="/image/phone.png" alt="">
+                        <h2 class="font-semibold text-gray-800 ml-5 xl:text-lg">iPhone 11 128GB Black</h2>
+                    </div>
+                    <!-- icons and price -->
+                    <div class="flex items-center space-x-4">
+                        <!-- number  -->
+                        <div class="space-x-2">
+                        <i id="phone-btn-minus" class=" cursor-pointer fa-solid fa-minus"></i>
+                        <input id="phone-input-filed" type="number" value="1" class=" rounded text-center appearance-none outline-none bg-gray-400 w-10 border border-transparent">
+                        <i id="btn-phone-plus" class=" cursor-pointer fa-solid fa-plus "></i>
+                        </div>
+                        <!-- delete and price -->
+                        <div class="flex items-center space-x-2">
+                            <h1>$<span id="phone-price">1219</span></h1>
+                            <i class="fa-solid fa-xmark text-red-500 text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- case section -->
+                <div class=" mt-4 bg-white rounded-lg p-5 px-10 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img class=" w-20 h-20 object-cover" src="/image/case.png" alt="">
+                        <h2 class="font-semibold text-gray-800 ml-2  xl:text-lg">iPhone 11 Silicone Case - Black</h2>
+                    </div>
+                    <!-- icons and price -->
+                    <div class="flex items-center space-x-4">
+                        <!-- number  -->
+                        <div class="space-x-2">
+                        <i id="case-btn-minus" class="fa-solid fa-minus cursor-pointer"></i>
+                        <input id="case-input-filed" type="number" value="1" class=" rounded text-center appearance-none outline-none bg-gray-400 w-10 border border-transparent">
+                        <i id="btn-case-plus" class="fa-solid fa-plus cursor-pointer"></i>
+                        </div>
+                        <!-- delete and price -->
+                        <div class="flex items-center space-x-2">
+                            <h1>$<span id="case-price">59</span></h1>
+                            <i class="fa-solid fa-xmark text-red-500 text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- total price section  -->
+                <div class=" px-10 mt-4 bg-white rounded-lg p-5 flex justify-between items-center">
+                    <!-- left -->
+                    <div>
+                        <p>Subtotal:</p>
+                        <p>Tax:</p>
+                        <p>Total:</p>
+                    </div>
+                    <!-- right -->
+                    <div>
+                        <p>$<span id="sub-total">1278</span></p>
+                        <p>$<span id="tax">0</span></p>
+                        <p>$<span id="total-ammount">1278</span></p>
+                    </div>
+                </div>
+            </section>
+            <!-- information section -->
+            <section class=" shadow-2xl w-9/12 xl:w-7/12 mx-auto mt-10 bg-gray-400 rounded-lg p-10">
+                <!-- information -->
+                <h1 class="text-gray-800 font-medium text-3xl text-center boder-b">Project Overview</h1>
+                <div class="w-11/12 p-10 bg-white mx-auto mt-10 rounded-lg">
+                    <p class=" text-gray-700  "><span class="text-gray-700 text-xl font-bold">Increment and Decrement:</span> Clicking the plus sign increases the value, while the minus sign decreases it.
+                    </p>
+                    <p class=" mt-2 text-gray-700 "><span class="text-gray-700 text-xl font-bold">Dynamic Price Adjustment:</span> Prices are adjusted accordingly with value changes, providing a seamless user experience.
+                    </p>
+                    <p class=" mt-2 text-gray-700 "><span class="text-gray-700 text-xl font-bold">Subtotal and Total Updates:</span> Incrementing prices contribute to the subtotal, including tax calculations, and are then reflected in the main total section.
+                    </p>
+                </div>
+                <h1 class=" mt-10 text-gray-800 font-medium text-3xl text-center boder-b">Code Organization</h1>
+                <div class="w-11/12 p-10 bg-white mx-auto mt-10 rounded-lg">
+                    <p class="text-gray-700">The code is organized into three parts, with a specific emphasis on the implementation of the DRY (Don't Repeat Yourself) principle. A utility.js file has been created to house common functions, enhancing code modularity and maintainability.</p>
+                    <p class="mt-8 text-gray-700">
+                        Feel free to explore the codebase on GitHub. I've intentionally kept practice segments for transparency and learning purposes.
+                    </p>
+                    <p class="text-gray-700 mt-2 font-bold"><span class="mt-2">git link:</span></p>
+                </div>
+            </section>
+        </main>
+        <script src="/JS/utilityClone.js"></script>
+        <script src="/JS/caseClone.js"></script>
+        <script src="/JS/phoneClone.js"></script>
+    </body>
+</html>
